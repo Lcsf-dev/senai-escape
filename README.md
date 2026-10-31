@@ -1,10 +1,10 @@
-# SENAI Escape — Missão Conhecimento
+# 🎮 SENAI Escape — Missão Conhecimento
 
 Protótipo acadêmico independente de Escape Room 2D para aulas de Front-end.
 
 O jogador precisa resolver três desafios para coletar chaves numéricas e abrir a saída.
 
-## Como executar
+## 🚀 Como executar
 
 1. Extraia o arquivo ZIP, se o projeto estiver compactado.
 2. Abra `index.html` em um navegador moderno.
@@ -12,7 +12,7 @@ O jogador precisa resolver três desafios para coletar chaves numéricas e abrir
 
 Não exige instalação, servidor, dependências ou conexão à internet.
 
-## Funcionalidades
+## 🎮 Funcionalidades
 
 - Menu, introdução, mapa, três salas e painel final.
 - Desafios de Climatização, Alvenaria e Front-End.
@@ -21,7 +21,7 @@ Não exige instalação, servidor, dependências ou conexão à internet.
 - Layout responsivo e navegação por clique/toque.
 - Código final formado pelas chaves das salas.
 
-## Organização dos arquivos
+## 📁 Organização dos arquivos
 
 | Arquivo | Responsabilidade |
 | --- | --- |
@@ -33,7 +33,7 @@ O JavaScript troca o conteúdo da seção `#screen` para mostrar cada tela. Por 
 
 O CSS está dividido por comentários em português. Os nomes das classes foram mantidos para preservar a ligação com o HTML e o JavaScript.
 
-## Como o jogo funciona
+## 🧩 Como o jogo funciona
 
 1. A tela inicial oferece **Iniciar missão** e **Continuar**.
 2. **Iniciar missão** mostra a introdução; **Continuar** abre o mapa.
@@ -45,7 +45,7 @@ O CSS está dividido por comentários em português. Os nomes das classes foram 
 
 As salas concluídas podem ser revisitadas sem duplicar as chaves.
 
-## Principais partes do JavaScript
+## 💻 Principais partes do JavaScript
 
 | Dado ou função | O que faz |
 | --- | --- |
@@ -60,7 +60,7 @@ As salas concluídas podem ser revisitadas sem duplicar as chaves.
 | `mostrarPainelFinal()` e `verificarCodigoFinal()` | Exibem o painel da saída e conferem o código digitado. |
 | `reiniciarJogo()` | Pede confirmação antes de apagar o progresso. |
 
-## Como o progresso é salvo
+## 💾 Como o progresso é salvo
 
 O `localStorage` guarda texto no navegador. O jogo usa `JSON.stringify()` para transformar os dados em texto e `JSON.parse()` para recuperá-los.
 
@@ -72,7 +72,7 @@ O `localStorage` guarda texto no navegador. O jogo usa `JSON.stringify()` para t
 
 A chave de armazenamento é `senai_escape_v1`. O campo `completed` foi mantido para ler os dados salvos pela versão anterior.
 
-## Conferência manual
+## ✅ Conferência manual
 
 1. Em uma partida sem progresso, confira se somente Climatização está liberada.
 2. Escolha uma resposta errada e confira se aparece uma mensagem, sem entregar a chave.
@@ -83,16 +83,16 @@ A chave de armazenamento é `senai_escape_v1`. O campo `completed` foi mantido p
 7. Teste o reinício: cancelar deve preservar o progresso; confirmar deve apagar as conclusões.
 8. Confira a disposição dos elementos em uma janela larga e em outra com largura de até 600 pixels.
 
-## Sugestão para a apresentação
+## 🎤 Sugestão para a apresentação
 
 Expliquem primeiro o objetivo do jogo. Depois, mostrem como HTML, CSS e JavaScript trabalham juntos.
 
 No código, acompanhem este caminho: clique em uma alternativa → `verificarResposta()` → `concluirSala()` → `salvarProgresso()`. Esse exemplo mostra a interação, a decisão e o armazenamento dos dados.
 
-## Próximas melhorias
+## 🔮 Próximas melhorias
 
 Criar artes originais 2D, inventário, dicas, cronômetro, pontuação, sons, acessibilidade ampliada e salas de Pintura, Back-End e UI/UX.
 
-## Aviso
+## 📌 Aviso
 
 Projeto demonstrativo não oficial, sem vínculo ou endosso da Firjan SENAI. Validar autorização antes de utilizar marcas institucionais em divulgação pública.
